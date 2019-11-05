@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="dirpath" elementType="Argument">
             <stringProp name="Argument.name">dirpath</stringProp>
-            <stringProp name="Argument.value">${__P(dirpath,C:/PT/Project/IDM)}</stringProp>
+            <stringProp name="Argument.value">${__P(dirpath,C:/PT/projects/IDM)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="ThinkTime" elementType="Argument">

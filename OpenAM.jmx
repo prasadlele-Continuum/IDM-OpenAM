@@ -20,10 +20,15 @@
           </elementProp>
           <elementProp name="dirpath" elementType="Argument">
             <stringProp name="Argument.name">dirpath</stringProp>
-            <stringProp name="Argument.value">${__P(dirpath,C:/PT/projects/IDM)}</stringProp>
+            <stringProp name="Argument.value">${__P(dirpath,/home/engguser/PT/projects/IDM)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="ThinkTime" elementType="Argument">
+	  <elementProp name="duration" elementType="Argument">
+            <stringProp name="Argument.name">duration</stringProp>
+            <stringProp name="Argument.value">${__P(duration,300)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+	  <elementProp name="ThinkTime" elementType="Argument">
             <stringProp name="Argument.name">ThinkTime</stringProp>
             <stringProp name="Argument.value">${__P(ThinkTime,1000)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
@@ -54,7 +59,7 @@
         <longProp name="ThreadGroup.start_time">1514381761000</longProp>
         <longProp name="ThreadGroup.end_time">1514381775000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">300</stringProp>
+	<stringProp name="ThreadGroup.duration">${duration}</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>

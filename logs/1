@@ -1,0 +1,9 @@
+#!/bin/sh
+DATABASE=demo
+USERNAME=postgres
+HOSTNAME=127.0.0.1
+export PGPASSWORD=abc
+#PGPASSWORD=grafana psql -U grafana demo
+ PGPASSWORD=abc psql  -U $USERNAME $DATABaSE << EOF
+select * from demotable
+EOF
